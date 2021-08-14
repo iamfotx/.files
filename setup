@@ -11,8 +11,8 @@ elif [[ $uname == "Linux" ]]; then
 fi
 
 if [ "$platform" == "macos" ]; then
-#   ./setup-homebrew
-  ./setup-mac
+  ./setup-homebrew
+#   ./setup-mac
 fi
 
 # ./setup-bash

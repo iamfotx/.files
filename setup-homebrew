@@ -1,5 +1,24 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-echo "installing homebrew"
-# install homebrew https://brew.sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+set -e
+
+echo "Installing homebrew..."
+
+homebrew_prefix="/usr/local"
+
+if [ -d "$homebrew_prefix" ]; then
+  if ! [ -r "$homebrew_prefix" ]; then
+    sudo chown -R "$LOGNAME:admin" /usr/local
+  fi
+else
+  sudo mkdir "$homebrew_prefix"
+  sudo chflags norestricted "$homebrew_prefix"
+  sudo chown -R "$LOGNAME:admin" "$homebrew_prefix"
+fi
+
+if ! command -v brew >/dev/null; then
+  curl -fsS \
+    'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
+fi
+
+brew update

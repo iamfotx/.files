@@ -3,12 +3,14 @@
 set -e
 
 # Install and use node LTS
-echo "installing node (via n-install)"
+echo "installing node (via n-install)..."
 curl -sL https://git.io/n-install | bash -s -- -q
 
+echo "Installing yarn..."
 # Install yarn
 curl -o- -L https://yarnpkg.com/install.sh | bash
 
+echo "Installing global packages..."
 # Install a few packages globally
 yarn global add serve fkill-cli npm-quick-run semantic-release-cli \
 npm-check-updates prettier create-react-app

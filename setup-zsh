@@ -5,6 +5,7 @@ set -e
 source setup-helpers
 
 install_dotfile "zshrc"
+install_dotfile "zshenv"
 
 mkdir -p $HOME/.config
 

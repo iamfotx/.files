@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # Test for an interactive shell.  There is no need to set anything
 # past this point for scp and rcp, and it's important to refrain from
 # outputting anything in those cases.
@@ -163,24 +161,3 @@ function quit () {
     done
   fi
 }
-
-
-##############################################################
-# paths                                                      #
-##############################################################
-
-PATH="$PATH":"$HOME/.yarn/bin"
-PATH="$PATH":"./node_modules/.bin"
-BASE16_SHELL="$HOME/.config/base16-shell/"
-NVM_DIR="$HOME/.nvm"
-
-
-##############################################################
-# load on start                                              #
-##############################################################
-
-# Load nvm
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-# Load base16 shell helpers
-[ -n "$PS1" ] && [ -s "$BASE16_SHELL/profile_helper.sh" ] && eval "$($BASE16_SHELL/profile_helper.sh)"

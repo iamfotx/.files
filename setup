@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 set -e
 
@@ -12,7 +12,7 @@ fi
 
 if [ "$platform" == "macos" ]; then
   ./setup-homebrew
-#   ./setup-mac
+  ./setup-mac
 fi
 
 # ./setup-bash

@@ -10,6 +10,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 NVM_DIR="$HOME/.nvm"
 source "$NVM_DIR/nvm.sh"
 
+# Install and use node version 10 by default
+nvm install 10
+nvm alias default 10
+
 echo "Installing yarn..."
 # Install yarn
 curl -o- -L https://yarnpkg.com/install.sh | bash

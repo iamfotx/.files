@@ -15,7 +15,7 @@ if [ "$platform" == "macos" ]; then
   ./setup-mac
 fi
 
-# ./setup-bash
-# ./setup-git
+./setup-zsh
+./setup-git
 # ./setup-vim
 # ./setup-node

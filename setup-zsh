@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+source setup-helpers
+
+install_dotfile "zshrc"
+
+mkdir -p $HOME/.config
+
+install_dotfile "config/base16-shell"

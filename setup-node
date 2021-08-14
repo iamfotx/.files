@@ -3,8 +3,12 @@
 set -e
 
 # Install and use node LTS
-echo "installing node (via n-install)..."
-curl -sL https://git.io/n-install | bash -s -- -q
+echo "installing node (via nvm)..."
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+
+# Source nvm
+NVM_DIR="$HOME/.nvm"
+source "$NVM_DIR/nvm.sh"
 
 echo "Installing yarn..."
 # Install yarn

@@ -169,7 +169,7 @@ function quit () {
 PATH="$PATH":"$HOME/.yarn/bin"
 PATH="$PATH":"./node_modules/.bin"
 BASE16_SHELL="$HOME/.config/base16-shell/"
-# NVM_DIR="$HOME/.nvm"
+NVM_DIR="$HOME/.nvm"
 
 ##############################################################
 # load on start                                              #
@@ -179,5 +179,5 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && [ -s "$BASE16_SHELL/profile_helper.sh" ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 # Load nvm
-# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"

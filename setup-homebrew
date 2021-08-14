@@ -22,3 +22,20 @@ if ! command -v brew >/dev/null; then
 fi
 
 brew update
+
+if [ "$1" == "--install-apps" ]; then
+  echo "brew installing stuff..."
+  # hub: a github-specific version of git
+  # ripgrep: rg is faster than alternatives
+  # tree: really handy for listing out directories in text
+  # bat: A cat(1) clone with syntax highlighting and Git integration.
+  # switchaudio-osx: allows me to switch the audio device via the command line
+  brew install git hub ripgrep watchman tree bat \
+  delta switchaudio-osx
+
+  echo "installing apps with brew cask..."
+  brew install --cask google-chrome visual-studio-code 1password \
+  skype zoom slack vim openvpn-connect postman runjs bartender
+fi
+
+

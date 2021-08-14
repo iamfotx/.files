@@ -34,8 +34,8 @@ if [ "$1" == "--install-apps" ]; then
   delta switchaudio-osx
 
   echo "installing apps with brew cask..."
-  brew install --cask google-chrome visual-studio-code 1password \
-  skype zoom slack vim openvpn-connect postman runjs bartender
+  brew install --force --cask google-chrome visual-studio-code 1password \
+  skype zoom slack macvim openvpn-connect postman runjs bartender
 fi
 
 

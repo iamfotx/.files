@@ -2,11 +2,8 @@
 
 set -e
 
-# Install node
-echo "installing node (via n-install)"
-curl -L https://git.io/n-install | bash
-
 # Install and use node LTS
+echo "installing node (via n-install)"
 curl -sL https://git.io/n-install | bash -s -- -q
 
 # Install yarn

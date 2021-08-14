@@ -17,8 +17,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # iamfotx's Customizations                                                    #
 ###############################################################################
 
-echo "Hello $(whoami)! Let's get you set up for Monday."
-
 echo "mkdir -p ${HOME}/code"
 mkdir -p "${HOME}/code"
 

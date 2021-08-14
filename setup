@@ -2,6 +2,8 @@
 
 set -e
 
+echo "Hello $(whoami)! Let's get you set up for Monday."
+
 uname=`uname`
 platform="unknown"
 if [[ $uname == "Darwin" ]]; then

@@ -31,7 +31,7 @@ if [ "$1" == "--install-apps" ]; then
   # bat: A cat(1) clone with syntax highlighting and Git integration.
   # switchaudio-osx: allows me to switch the audio device via the command line
   brew install git hub ripgrep watchman tree bat \
-  delta switchaudio-osx
+  delta switchaudio-osx gnupg
 
   echo "installing apps with brew cask..."
   brew install --force --cask google-chrome visual-studio-code 1password \

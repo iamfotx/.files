@@ -35,7 +35,7 @@ if [ "$1" == "--install-apps" ]; then
 
   echo "installing apps with brew cask..."
   brew install --force --cask google-chrome visual-studio-code 1password \
-  skype zoom slack macvim openvpn-connect postman runjs bartender
+  skype zoom slack openvpn-connect postman runjs bartender
 fi
 
 

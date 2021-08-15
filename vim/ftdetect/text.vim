@@ -1,0 +1,1 @@
+au Filetype text setl nowrap

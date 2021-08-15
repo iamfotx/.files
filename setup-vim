@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -e
+
+source setup-helpers
+
+# Install vim
+# TODO: Make this cross-platform
+echo "Installing vim..."
+brew install vim
+
+echo "Installing macvim with brew cask..."
+brew install --force --cask macvim
+
+mkdir -p "$HOME/.vim"
+mkdir -p "$HOME/.vim/swapfiles"
+
+install_dotfile "vim/autoload"
+install_dotfile "vim/ftdetect"
+install_dotfile "vim/config"
+install_dotfile "vimrc"
+
+vim +PlugInstall +qall

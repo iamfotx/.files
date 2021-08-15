@@ -10,5 +10,5 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Appearance
 
-syntax on
+syntax enable
 colorscheme night-owl

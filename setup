@@ -20,4 +20,4 @@ fi
 ./setup-zsh
 ./setup-git
 ./setup-node
-# ./setup-vim
+./setup-vim

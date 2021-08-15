@@ -5,4 +5,3 @@ My .files and setup scripts. Setup a new machine by running `./setup`. Or setup 
 The goal is for all scripts to be idempotent and able to run on any platform that I use, including:
 
 * macOS (Intel)
-* ChromeOS

@@ -94,12 +94,15 @@ alias ..="cd ../";
 alias ....="cd ../../";
 alias ..l="cd ../ && ll";
 alias cd..="cd ../"
+function mvi { mvim "$@" }
 alias pg="echo 'Pinging Google' && ping www.google.com";
 alias vz="vim ~/.zshrc";
 alias cz="code ~/.zshrc";
 alias sz="source ~/.zshrc";
+alias vv="vi ~/.vimrc";
 alias de="cd ~/Desktop";
-alias d="cd ~/code";
+alias d="cd ~/codes";
+alias cl="clear"
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias deleteDSFiles="find . -name '.DS_Store' -type f -delete"
@@ -110,6 +113,7 @@ alias dont_index_node_modules='find . -type d -name "node_modules" -exec touch "
 
 ## git aliases
 function gc { git commit -m "$@"; }
+function gcl { git clone "$@"; }
 alias gs="git status";
 alias gp="git pull";
 alias gf="git fetch";
@@ -182,3 +186,4 @@ NVM_DIR="$HOME/.nvm"
 # Load nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+source /Users/iamfotx/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -19,5 +19,6 @@ install_dotfile "vim/autoload"
 install_dotfile "vim/ftdetect"
 install_dotfile "vim/config"
 install_dotfile "vimrc"
+install_dotfile "gvimrc"
 
 vim +PlugInstall +qall

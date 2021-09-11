@@ -121,7 +121,8 @@ nnoremap <leader><CR> :set hlsearch!<CR>
 nnoremap <Leader>a :Ack<Space>
 vnoremap <Leader>a :Ack<Space>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Wrapping
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Wrapping
 
 " wrap long lines by default
 set wrap
@@ -135,7 +136,8 @@ set textwidth=80
 " Toggle wrapping with <Leader>w
 noremap <Leader>w :set wrap!<Return>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Line numbers
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Line numbers
 
 " show line numbers
 set number
@@ -146,12 +148,14 @@ set rnu
 " Toggle line numbers with <Leader>n
 noremap <Leader>n :set number!<Return>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Copy/paste
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Copy/paste
 
 " copy to the clipboard when yanking
 set clipboard=unnamed
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Appearance
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Appearance
 
 " open split panes on bottom (instead of top)
 set splitbelow
@@ -171,7 +175,8 @@ set noerrorbells
 set mouse=a
 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Formatting
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Formatting
 
 " use spaces instead of tabs
 set expandtab
@@ -183,7 +188,8 @@ set tabstop=2
 set shiftwidth=2
 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Syntax
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Syntax
 
 syntax enable
 
@@ -194,17 +200,20 @@ let g:jsx_ext_required = 0
 let g:javascript_plugin_flow = 1
 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Netrw
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Netrw
 
 " Allow netrw to remove non-empty local directories
 let g:netrw_localrmdir = "trash"
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Copy/paste
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Copy/paste
 
 " Re-select the last pasted text with `gp`
 nnoremap gp `[v`]
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Movement/Motions
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Movement/Motions
 
 " Always move linewise in normal mode
 nnoremap k gk

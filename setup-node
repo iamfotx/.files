@@ -11,8 +11,8 @@ NVM_DIR="$HOME/.nvm"
 source "$NVM_DIR/nvm.sh"
 
 # Install and use node version 10 by default
-nvm install 10
-nvm alias default 10
+nvm install --lts
+nvm alias default lts
 
 echo "Installing yarn..."
 # Install yarn
@@ -21,4 +21,4 @@ curl -o- -L https://yarnpkg.com/install.sh | bash
 echo "Installing global packages..."
 # Install a few packages globally
 yarn global add serve fkill-cli npm-quick-run semantic-release-cli \
-npm-check-updates prettier create-react-app
+npm-check-updates prettier eslint create-react-app

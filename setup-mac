@@ -41,8 +41,8 @@ sudo launchctl limit maxfiles 2048 unlimited
 # Disable Resume system-wide
 defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
-# Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
+# Restart automatically if the computer freezes (doesn't work with M1)
+# sudo systemsetup -setrestartfreeze on
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true

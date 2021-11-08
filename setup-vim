@@ -9,6 +9,9 @@ source setup-helpers
 echo "Installing vim..."
 brew install vim
 
+echo "Work around a specific error"
+rm -rf /opt/homebrew/bin/vi*
+
 echo "Installing macvim with brew cask..."
 brew install --force --cask macvim
 

@@ -4,11 +4,11 @@ set -e
 
 echo "Installing homebrew..."
 
-homebrew_prefix="/usr/local"
+homebrew_prefix="/opt/homebrew"
 
 if [ -d "$homebrew_prefix" ]; then
   if ! [ -r "$homebrew_prefix" ]; then
-    sudo chown -R "$LOGNAME:admin" /usr/local
+    sudo chown -R "$LOGNAME:admin" /opt/homebrew
   fi
 else
   sudo mkdir "$homebrew_prefix"

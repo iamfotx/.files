@@ -171,6 +171,9 @@ function quit () {
 # paths                                                      #
 ##############################################################
 
+BREWPATH=/opt/homebrew
+BREWBIN=/opt/homebrew/bin
+PATH="$PATH":"$BREWBIN"
 PATH="$PATH":"$HOME/.yarn/bin"
 PATH="$PATH":"./node_modules/.bin"
 BASE16_SHELL="$HOME/.config/base16-shell/"
